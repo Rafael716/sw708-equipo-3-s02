@@ -12,7 +12,7 @@
 | **Artefacto** | Interfaz de integración entre ambos módulos |
 | **Entorno** | Operación activa, horario normal 24/7 |
 | **Respuesta** | El Módulo de Monitoreo recibe e interpreta correctamente el cambio de estado y lo refleja en su dashboard sin intervención manual |
-| **Medida** | Al menos el 99% de los cambios de estado generados por el Módulo de Operaciones Marítimas son recibidos e interpretados correctamente por el Módulo de Monitoreo, sin intervención manual |
+| **Medida** | Al menos el 99% de los cambios de estado generados por el Módulo de Operaciones Marítimas son recibidos e interpretados correctamente por el Módulo de Monitoreo, sin intervención manual. |
 
 ---
 
@@ -79,3 +79,19 @@
 
 
 # Obersaciones del Equipo 2
+
+### 1. Compatibilidad — Interoperabilidad
+
+**Problema detectado:** La medida dice “99% de cambios recibidos e interpretados correctamente”, pero no indica **con qué instrumento** se verificará ni quién lo ejecutará.
+
+### 2. Fiabilidad
+
+**Problema detectado:** La medida menciona “pruebas”, pero no especifica qué herramienta concreta se utilizará para medir la disponibilidad ni quién será responsable de ejecutar las pruebas.
+
+### 3. Seguridad
+
+**Problema detectado:** La medida “100% de incidencias auditables y cifradas” indica el resultado esperado, pero no especifica un instrumento concreto para comprobarlo ni quién realizará la medición. Además, la métrica de **“notificación a responsables en <24h”** resulta poco precisa para una incidencia crítica, ya que no define con qué herramienta se medirá el tiempo de notificación.
+
+### 4. Mantenibilidad
+
+**Problema detectado:** La medida “menos de 1 día-persona” no especifica cómo se contabilizará el tiempo empleado ni quién realizará dicha medición. Además, la condición de “sin downtime” requiere un instrumento concreto que permita verificar la disponibilidad durante la aplicación del cambio.
